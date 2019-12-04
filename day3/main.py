@@ -55,7 +55,7 @@ def compute_delay(intersection):
         return (delay1 + abs(x - p1[0]) + delay2 + abs(y - p3[1]))
 
 
-with open('input') as f:
+with open('day3/input') as f:
     instructions = [line.split(',') for line in f.readlines()]
 
     lines1 = construct_lines(np.array([0, 0]), instructions[0], 0)
